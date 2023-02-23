@@ -14,8 +14,7 @@ const TodoCreate = () => {
         todoApis.createTodoAX(todo)
             .then((res) => {
                 dispatch({ type: "CREATE", data: res.data });
-            }).catch((error) => {
-
+                event.target[0].value = "";
             })
     }
 
