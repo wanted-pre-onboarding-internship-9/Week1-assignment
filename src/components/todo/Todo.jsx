@@ -1,4 +1,5 @@
 import React, { useContext, useState } from 'react';
+import styled from 'styled-components';
 import { todoApis } from "../../apis/todo"
 import { TodosStateContext } from '../../pages/TodoPage';
 
@@ -19,6 +20,7 @@ const Todo = ({ todo }) => {
     }
 
     const updateTodo = (type, inputTodo) => {
+        if (type === "todo" && inputTodo === todo.todo) return;
         todoApis.updateTodoAX({
             id: todo.id,
             todo: {
@@ -42,7 +44,7 @@ const Todo = ({ todo }) => {
     }
 
     return (
-        <li>
+        <StTodoWrap>
             {!isEdit ?
                 <>
                     <label>
@@ -61,8 +63,12 @@ const Todo = ({ todo }) => {
                     <button data-testid="cancel-button" onClick={editHandle}>취소</button>
                 </form>
             }
-        </li>
+        </StTodoWrap>
     );
 };
 
 export default Todo;
+
+const StTodoWrap = styled.li`
+    list-style: none;
+`
