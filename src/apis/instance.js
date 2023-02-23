@@ -15,7 +15,7 @@ instance.interceptors.request.use((config) => {
 
 instance.interceptors.response.use(
     (response) => {
-        if (response.data.access_token)
+        if (response.data.access_token && response.status === 200)
             localStorage.setItem("accessToken", response.data.access_token);
         return response.data;
     }, function (error) {

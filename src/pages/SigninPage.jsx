@@ -1,11 +1,10 @@
-import React from 'react';
+import AuthForm from "../components/AuthForm";
 
-const SigninPage = () => {
+export default function SigninPage() {
     return (
-        <div>SigninPage
-
-        </div>
+        <>
+            <h1>로그인</h1>
+            <AuthForm type="signin" />
+        </>
     );
-};
-
-export default SigninPage;
+}

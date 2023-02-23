@@ -1,11 +1,12 @@
-import React from 'react';
+import styled from "styled-components";
+import AuthForm from "../components/AuthForm";
 
-const SignupPage = () => {
+
+export default function SignupPage() {
     return (
-        <div>
-            ??
-        </div>
+        <>
+            <h1>회원가입</h1>
+            <AuthForm type="signup" />
+        </>
     );
-};
-
-export default SignupPage;
+}
