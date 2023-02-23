@@ -1,8 +1,8 @@
 import { useReducer } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import styled from "styled-components";
-import { userApis } from "../apis/user";
-import { FormReducer, initialStateForm } from "../reducers/formReducer";
+import { userApis } from "../../apis/user";
+import { FormReducer, initialStateForm } from "../../reducers/formReducer";
 
 
 
@@ -11,7 +11,7 @@ export default function AuthForm({ type }) {
     const [formState, dispatch] = useReducer(FormReducer, initialStateForm);
 
     //submit
-    const onSubmit = async (e) => {
+    const onSubmit = (e) => {
         e.preventDefault();
         userApis.authAX(type, {
             email: formState.email,

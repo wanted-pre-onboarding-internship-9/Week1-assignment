@@ -17,7 +17,7 @@ instance.interceptors.response.use(
     (response) => {
         if (response.data.access_token && response.status === 200)
             localStorage.setItem("accessToken", response.data.access_token);
-        return response.data;
+        return response;
     }, function (error) {
         switch (error.response.data.statusCode) {
             case 400:
