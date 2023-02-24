@@ -108,9 +108,9 @@ CRUD 요청의 res data를 활용하여 불필요한 API 요청을 줄이고, to
    ㄴ 📄 validation.js
 ㄴ 📁 components
    ㄴ 📁 sign
-	  ㄴ 📄 AuthForm.jsx  
+      ㄴ 📄 AuthForm.jsx  
    ㄴ 📁 todo
-	  ㄴ 📄 Todo.jsx
+      ㄴ 📄 Todo.jsx
       ㄴ 📄 TodoCreate.jsx   
       ㄴ 📄 TodoList.jsx   
 ㄴ 📁 pages
