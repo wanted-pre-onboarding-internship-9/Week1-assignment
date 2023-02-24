@@ -24,7 +24,6 @@ Best Pratice를 도출하고, 그것들을 연결해서 합치면 결국 팀원 
 	[redirect 코드 보러가기]
 	</a> 
 	</h4>
-	
     <p>
 	router dom의 loader에서 데이터를 반환하는 것 외에도, 각 경로를 렌더링하기 전에 사용자를 다른 경로로 redirection할 수 있어 컴포넌트의 불필요한 렌더링을 줄일 수 있었습니다. 또한 각 컴포넌트에 별도의 토큰 정보를 확인할 필요가 없으며, router에서 경로 처리를 한번에 관리할 수 있어서 선택하게 되었습니다.
 	</p>
@@ -48,7 +47,6 @@ Best Pratice를 도출하고, 그것들을 연결해서 합치면 결국 팀원 
 	[AuthForm 코드 보러가기]
 	</a>
 	</h4>
-
     <p>
 useReducer와 custom hook 두 가지 모두 컴포넌트의 상태 업데이트 로직을 컴포넌트에서 분리시킬 수 있었습니다. 다만 컴포넌트에서 관리하는 값이 여러 개가 되어 상태의 구조가 복잡해진다면 useReducer를 사용하여 조금 더 직관적인 state 관리를 할 수 있으며, 로그인과 회원가입을 하나의 AuthForm으로 관리하기 때문에 custom hook 보다는 useReducer를 사용하여 input의 유효성 검사를 진행하게 되었습니다.
 	</p>
@@ -72,13 +70,9 @@ useReducer와 custom hook 두 가지 모두 컴포넌트의 상태 업데이트 
 	[useReducer 코드 보러가기]
 	</a>
 	</h4>
-	
-	<br/>
-	
     <p>
 CRUD 요청의 res data를 활용하여 불필요한 API 요청을 줄이고, todo 데이터의 상태관리를 위해 useReducer를 사용했습니다. useReducer에서 API 요청을 한 번에 처리하려고 시도했지만, useReducer는 순수 함수로만 작동해야 하므로 별도의 API 요청 함수를 구현했습니다. 또한, useContext에 useReducer를 접목하여 불필요한 props를 줄이고 상태관리를 할 수 있는 방법을 생각했습니다.
 </p>
-	
     <p> 참고 : https://velog.io/@allenk/useReducer%EB%A1%9C-%EB%B9%84%EB%8F%99%EA%B8%B0-%EB%A1%9C%EC%A7%81-%EB%8B%A4%EB%A3%A8%EA%B8%B0</p>    
 </details>
 
