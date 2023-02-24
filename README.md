@@ -80,7 +80,7 @@ CRUD 요청의 res data를 활용하여 불필요한 API 요청을 줄이고, to
 ## 📖 Git Convention &  History 관리 
 > 1일차~2일차 :  팀원 모두가 함께 작업한 파일은 Commit Message 를 통해 master(main) branch에서 작업합니다.
 
-> 3일차 : 이후 추가적인 코드 변경은 develop에서 신규 release branch or issues branch 를 만들어 작업 후 PR 합니다 
+> 3일차 : 이후 추가적인 코드 변경은 develop에서 신규 feature branch or issues branch 를 만들어 작업 후 PR 합니다 
 
 - 안쓰는 코드들(콘솔, 주석)은 쌓아두지 말고 지워주세요!
 - Pull → Commit → Push 순서로 작업해주세요!
